@@ -42,3 +42,7 @@ variable "default_pool_vm_size" {
 locals {
   trigram = "aki"
 }
+resource "azurerm_resource_group" "exemple" {
+  name="${local.trigram}-formation"
+  location="francecentral"
+}
